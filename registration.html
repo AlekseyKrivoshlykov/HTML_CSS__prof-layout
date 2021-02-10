@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
-	<title>Cart</title>
+	<title>Registration</title>
 </head>
 <body>
 	<div class="container"> 
@@ -74,61 +74,36 @@
 		</header>
 		<main>
 			<section class="bread-crumbs">
-				<div class="bread-crumbs-name">shopping cart</div>	
+				<div class="bread-crumbs-name">registration</div>	
 			</section>
-			<section class="user-cart">
-				<!-- <h2 class="user-cart-main-title"></h2> -->
-				<div class="user-cart-items">
-					<div class="user-cart-item">
-						<h3 class="user-cart-item-title">mango people t-shirt</h3>
-						<ul class="user-cart-item-list">
-							<li>Price: <span class="user-cart-item-price">$300</span></li>
-							<li>Color: Red</li>
-							<li>Size: XL</li>
-							<li>Quantity: <span class="user-cart-item-quantity">2</span></li>
-						</ul>
-					</div>
-					<div class="user-cart-item-2">
-						<h3 class="user-cart-item-title">mango people t-shirt</h3>
-						<ul class="user-cart-item-list">
-							<li>Price: <span class="user-cart-item-price">$300</span></li>
-							<li>Color: Red</li>
-							<li>Size: XL</li>
-							<li>Quantity: <span class="user-cart-item-quantity">2</span></li>
-						</ul>
-					</div>
-					<div class="user-cart-items-btn-wrp">
-						<button class="user-cart-items-btn">clear shopping cart</button>
-						<button class="user-cart-items-btn">continue shopping</button>
-					</div>
+			<section class="user-registration">
+				<!-- <h2 class="user-registration-main-title"></h2> -->
+				<div class="user-registration-form">
+					<form action="#">
+						<h3 class="user-registration-form-title">Your Name</h3>
+						<div class="user-registration-form-input"><input type="text" placeholder="First Name"></div>
+						<div class="user-registration-form-input"><input type="text" placeholder="Last Name"></div>
+						<div class="user-registration-form-radio"><label for="male-check"><input id="male-check" type="radio" name="choose-for-user">Male
+						</label>
+						<label for="female-check"><input id="female-check" type="radio" name="choose-for-user">Female
+						</label></div>
+						<h3 class="user-registration-form-title">Login Details</h3>
+						<div class="user-registration-form-input"><input type="text" placeholder="Email"></div>
+						<div class="user-registration-form-input"><input type="password" placeholder="Password"></div>
+						<p class="user-registration-form-hint-pass">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+						<div><button type="submit" class="user-registration-form-btn">join now</button></div>
+					</form>
 				</div>
-				<div class="user-cart-address-and-sum">
-					<div class="shipping-address">
-						<form action="#" method="post">
-							<h3 class="shipping-address-title">shipping address</h3>
-							<div class="shipping-address-element"><input type="text" placeholder="Bangladesh">
-							</div>
-							<div class="shipping-address-element">
-								<select name="state-list" id="state-list">
-									<option value="state-list-title">State</option>
-								</select>
-							</div>
-							<div class="shipping-address-element">
-								<select name="postcode" id="postcode">
-									<option value="postcode-title">Postcode / Zip</option>
-								</select>
-							</div>
-							<div class="shipping-address-element">
-								<button type="submit" class="shipping-address-btn">get a quote</button>
-							</div>
-						</form>
-					</div>
-					<div class="total-sum">
-						<div class="total-sum-sub-price">sub total $900</div>
-						<div class="total-sum-grand-price">grand total <span>$900</span></div>
-						<div class="total-sum-devider"></div>
-						<div class="total-sum-btn"><button>proceed to chekout</button></div>
-					</div>
+				<div class="user-registration-content">
+					<h2 class="user-registration-content-title">loyality has its perks</h2>
+					<p class="user-registration-content-txt">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+					<ul class="user-registration-content-txt">
+						<li>15% off welcome offer</li>
+						<li>Free shipping, returns and exchanges on all orders</li>
+						<li>$10 off a purchase on your birthday</li>
+						<li>Early access to products</li>
+						<li>Exclusive offers & rewards</li>
+					</ul>
 				</div>
 			</section>
 		</main>
