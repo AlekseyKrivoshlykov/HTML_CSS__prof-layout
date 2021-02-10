@@ -481,10 +481,10 @@ nav > label {
 .social-links a {
 	margin-right: 7px;
 }
-svg:hover #social-link-back {
+svg:hover .social-link-back {
 	fill: #F16D7F;
 }
-svg:hover #social-link-logo {
+svg:hover .social-link-logo {
 	fill: #FFFFFF;
 }
 
