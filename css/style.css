@@ -73,6 +73,25 @@ button:focus-visible {
 input:focus-visible {
 	outline: 3px solid #C71585;
 }
+select:focus-visible {
+	outline: 3px solid #C71585;
+}
+/*FOCUS-VISIBLE FOR MOZILLA FIREFOX*/
+
+a:-moz-focusring {
+	outline: 3px solid #C71585;
+}
+button:-moz-focusring {
+	outline: 3px solid #C71585;
+}
+input:-moz-focusring {
+	outline: 3px solid #C71585;
+}
+select:-moz-focusring {
+	outline: 3px solid #C71585;
+}
+
+/*END FOCUS-VISIBLE FOR MOZILLA FIREFOX*/
 input, select {
 	font-family: 'Lato', sans-serif;
 }
@@ -81,7 +100,15 @@ ul {
 }
 a {
 	text-decoration: none;
-}	
+}
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
 .header-nav {
 	display: flex;
 	justify-content: space-between;
@@ -127,15 +154,16 @@ nav > label {
 	height: 767px;
 	display: none;
 	z-index: 3;
+	box-sizing: border-box;
 }
 .nav-menu-list-item:before {
 	content: "" url(../images/menu-icon-close.svg);
 	position: absolute;
-    top: 17px;
-    right: 17px;
+	top: 17px;
+	right: 17px;
 }
 [id="nav-menu-list"]:checked ~ .nav-menu-list-item {
-	box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+	box-shadow: 4px 0px 20px 0px rgba(0,0,0, 0.5);
 	display: block;
 }
 .menu-name {
@@ -190,7 +218,6 @@ nav > label {
 	font-size: 48px;
 	line-height: 58px;
 	color: #222222;
-	/*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 	margin: 0;
 }
 .slider-text-sub-title {
@@ -198,7 +225,6 @@ nav > label {
 	font-size: 32px;
 	line-height: 38px;
 	color: #222222;
-	/*text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 	margin: 0;
 }
 .slider-text-sub-title-span {
@@ -209,12 +235,14 @@ nav > label {
 	margin-left: 12px;
 }
 .offers {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	padding: 65px 14.375% 96px;
 	box-sizing: border-box;
 	text-transform: uppercase;
+}
+.offers-wrp {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .for-women, .for-men, .for-kids {
 	width: 360px;
@@ -292,7 +320,7 @@ nav > label {
 }
 .item-for-sale-list-content {
 	padding: 25px 0 20px 17px;
-    background-color: #F8F8F8;
+	background-color: #F8F8F8;
 }
 .item-for-sale-list li {
 	list-style-type: none;
@@ -949,6 +977,9 @@ svg:hover .social-link-logo {
 }
 .shipping-address select {
 	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
 	width: 100%;
 	border: 1px solid #A4A4A4;
 	padding: 13px 17px 16px;
@@ -1189,6 +1220,7 @@ svg:hover .social-link-logo {
 	}
 	.nav-menu-list-item {
 		right: -32px;
+		top: 39px;
 		height: 672px;
 		width: 169px;
 	}               
@@ -1232,6 +1264,10 @@ svg:hover .social-link-logo {
 	.registration, .cart {
 		display: none;
 	}
+	.nav-menu-list-item {
+		right: -16px;
+		top: 35px;	
+	}               
 }
 
 /*END OF MEDIA QUERIES FOR INDEX PAGE*/
